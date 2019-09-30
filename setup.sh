@@ -36,4 +36,4 @@ echo -e "$blue installing ..$nc"
 apt update; apt install python
 echo -e "$white[$green+$white] Python installed successfully."
 fi
-
+chmod +x ispy
