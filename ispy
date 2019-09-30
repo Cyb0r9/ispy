@@ -105,7 +105,7 @@ back
 
 function update(){
 echo -e "$white[$green+$white]$blue Current ispy version is$white :$red"
-curl -s "https://raw.githubusercontent.com/Cyb0r9/ispy/master/Version"| grep 1.0
+curl -s "https://raw.githubusercontent.com/Cyb0r9/ispy/master/version.txt"| grep 1.0
 if [[ $? = 0 ]]; then
 echo -e "$white[$green+$white]$blue ispy already updated$nc"
 else
