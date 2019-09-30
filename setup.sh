@@ -41,4 +41,9 @@ echo -e "$blue installing ..$nc"
 apt update; apt install python
 echo -e "$white[$green+$white] Python installed successfully."
 fi
-
+echo -e "$green"
+echo -e "you are ready to launch ispy"
+sleep 1
+echo -e "launching ispy$nc"
+sleep 1
+./ispy
