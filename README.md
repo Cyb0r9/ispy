@@ -30,6 +30,5 @@ https://youtube.com/c/Cyborg_TN
 * Ask Fm (ask me): https://ask.fm/Cyborg_TN
 * E-mail address : TunisianEagles@protonmail.com
 # Disclaimer :
-usage of ispy for attacking targets without prior mutual consent is illegal.
-
-ispy is for security testing purposes only
+<b>usage of ispy for attacking targets without prior mutual consent is illegal.</b>
+<b>ispy is for security testing purposes only</b>
