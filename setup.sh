@@ -46,4 +46,5 @@ echo -e "you are ready to launch ispy"
 sleep 1
 echo -e "launching ispy$nc"
 sleep 1
+chmod +x ispy
 ./ispy
