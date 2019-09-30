@@ -43,7 +43,7 @@ function banner(){
 	echo -e "$green			Programmed By$red Cyborg$nc\n"
 }
 
-exp(){
+function exp(){
 echo -e "$white[$green$n1$white] use $yellow($green$pack1$yellow:$red$e$yellow)"
 echo -e "$white[$green$n2$white] use $yellow($green$pack2$yellow:$red$e$yellow)"
 echo -e "$white[$green$n3$white] use $yellow($green$pack3$yellow:$red$e$yellow)"
@@ -111,8 +111,15 @@ echo -e "$white[$green+$white]$blue ispy already updated$nc"
 else
 echo -e "$red $(cat version.txt)"
 echo -e "$white[$green!$white]$blue Updating ispy ..."
-rm -rf ../ispy/
+cd ..
+rm -rf ispy/
 git clone https://github.com/Cyb0r9/ispy.git
+cd ispy/
+chmod +x setup.sh
+chmod +x ispy
+./setup.sh
+clear
+./ispy
 fi
 back
 }
