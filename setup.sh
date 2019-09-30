@@ -12,22 +12,27 @@ Fiuscha="\033[0;35m"
 blue="\033[1;34m"
 nc="\e[0m"
 #
+
 if hash msfconsole 2>/dev/null; then
 echo -e "$white[$green+$white] Metasploit installed $nc"
 else
 echo -e "$white[$green!$white]$red Metasploit not installed$nc"
 echo -e "$blue installing ..$nc"
-apt update; apt install metasploit-framework
+apt update
+apt install metasploit-framework
 echo -e "$white[$green+$white] Metasploit installed successfully."
 fi
+
 if hash curl 2>/dev/null; then
 echo -e "$white[$green+$white] Curl installed $nc"
 else
 echo -e "$white[$green!$white]$red Curl not installed$nc"
 echo -e "$blue installing ..$nc"
-apt update; apt install curl
+apt update
+apt install curl
 echo -e "$white[$green+$white] Curl installed successfully."
 fi
+
 if hash python 2>/dev/null; then
 echo -e "$white[$green+$white] Python installed $nc"
 else
@@ -36,4 +41,4 @@ echo -e "$blue installing ..$nc"
 apt update; apt install python
 echo -e "$white[$green+$white] Python installed successfully."
 fi
-chmod +x ispy
+
