@@ -23,8 +23,7 @@ chmod +x setup.sh
 # Youtube Channel ( Cyborg )
 https://youtube.com/c/Cyborg_TN
 # Tutorial ( How to use ispy )
-https://www.youtube.com/watch?v=WCa5N5_zKgw
-* comming soon
+* https://www.youtube.com/watch?v=WCa5N5_zKgw
 # info
 * GitHub profile : https://github.com/Cyb0r9
 * YouTbue channel: https://youtube.com/c/Cyborg_TN
